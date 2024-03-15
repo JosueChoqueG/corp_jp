@@ -14,27 +14,28 @@
     <title>Corporación Jurídica Penalito</title>
 
     <!-- favicon -->
-    <link rel="shortcut icon" href="assets/img/logos/logo.png" />
-    <link rel="apple-touch-icon" href="assets/img/logos/apple-touch-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/logos/apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/logos/apple-touch-icon-114x114.png" />
+    <link rel="shortcut icon" href="assets/logos/logo.png" />
+    <link rel="apple-touch-icon" href="assets/logos/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/logos/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/logos/apple-touch-icon-114x114.png" />
 
     <!-- plugins -->
-    <link rel="stylesheet" href="assets/css/plugins.css" />
+    <link rel="stylesheet" href="assetcms/css/plugins.css" />
 
     <!-- search css -->
-    <link rel="stylesheet" href="assets/search/search.css" />
+    <link rel="stylesheet" href="assetcms/search/search.css" />
 
     <!-- quform css -->
-    <link rel="stylesheet" href="assets/quform/css/base.css">
+    <link rel="stylesheet" href="assetcms/quform/css/base.css">
 
     <!-- theme core css -->
-    <link href="assets/css/styles.css" rel="stylesheet">
+    <link href="assetcms/css/styles.css" rel="stylesheet">
     <!-- <title>{{ title ?? site:name }}</title> -->
 </head>
 
 <body class="bg-gray-300" style="background-color: rgba(31, 29, 29, 0.11);">
-
+    <div id="preloader"></div>
+    <div class="main-wrapper">
     <!-- HEADER
             ================================================== -->
     <header class="header-style2" style="background-color: white;">
@@ -62,8 +63,8 @@
                             <nav class="navbar navbar-expand-lg navbar-light p-0">
                                 <div class="navbar-header navbar-header-custom">
                                     <!-- start logo -->
-                                    <a href="index-3.html" class="navbar-brand logodefault">
-                                        <img id="logo" src="assets/img/logos/logo.png" alt="logo">
+                                    <a href="home" class="navbar-brand logodefault">
+                                        <img id="logo" src="assets/logos/logo.png" alt="logo">
                                     </a>
                                     <!-- end logo -->
                                 </div>
@@ -71,7 +72,7 @@
                                 <!-- start menu area -->
                                 <ul class="navbar-nav ms-auto" id="nav" style="display: none;">
                                     <li>
-                                        <a href="index-3.html">Home</a>
+                                        <a href="home">Home</a>
                                     </li>
                                     <li>
                                         <a href="#!">Páginas</a>
@@ -140,19 +141,7 @@
             </div>
         </div>
     </header>
-    <div class="page-title-section bg-img cover-background secondary-overlay" data-overlay-dark="8" data-background="img/bg/bg-04.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="page-title">
-                        <h1>Libros</h1>
-                        <div class="heading-seprator"></div>
-                        <p class="text-white fs-4 mb-0 letter-spacing-2">“Todos los libros que necesitas”</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <!-- BANNER
         ================================================== -->
     <div class="slider-fade banner1">
@@ -174,7 +163,7 @@
                 </div>
             </div>
             <div class="text-center item bg-img secondary-overlay" data-overlay-dark="8"
-                data-background="img/banner/banner-02.jpg">
+                data-background="assets/banner/banner-02.jpg">
                 <div class="container h-100">
                     <div class="d-table h-100 w-100">
                         <div class="d-table-cell align-middle caption">
@@ -190,7 +179,7 @@
                 </div>
             </div>
             <div class="text-end item bg-img secondary-overlay" data-overlay-dark="8"
-                data-background="img/banner/banner-03.jpg">
+                data-background="assets/banner/banner-03.jpg">
                 <div class="container h-100">
                     <div class="d-table h-100 w-100">
                         <div class="d-table-cell align-middle caption">
@@ -207,11 +196,10 @@
             </div>
         </div>
     </div>
-    <div class="main-wrapper">
+    
         <div class="card shadow-xl mx-32 mx-md-20 mt-n9  p-1-9 p-sm-2-5 p-md-6 p-xl-9 position-relative z-index-1 bg-light">
             
         </div>
-    </div>
 
     <!-- FOOTER
         ================================================== -->
@@ -221,7 +209,7 @@
             <div class="row mt-n2-1">
                 <div class="col-sm-6 col-xl-3 mt-2-6">
                     <div class="mb-1-6 mb-lg-1-9">
-                        <a href="index-2.html" class="footer-logo"><img src="img/logos/logo.png" alt="..."></a>
+                        <a href="index" class="footer-logo"><img src="assets/logos/logo.png" alt="..."></a>
                     </div>
                     <h1 class="text-white mb-1-6 mb-lg-1-9 opacity9 display-30 display-lg-29 ">CORPORACIÓN JURÍDICA
                         PENALITO</h1>
@@ -305,7 +293,7 @@
         </div>
     </footer>
 
-
+ </div>
 
     <!-- ICONOS DIRECTOS
     ================================================== -->
@@ -321,28 +309,28 @@
     <!-- JS
     ================================================== -->
     <!-- jQuery -->
-    <script src="assets/js/jquery.min.js"></script>
+    <script src="assetcms/js/jquery.min.js"></script>
 
     <!-- popper js -->
-    <script src="assets/js/popper.min.js"></script>
+    <script src="assetcms/js/popper.min.js"></script>
 
     <!-- bootstrap -->
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assetcms/js/bootstrap.min.js"></script>
 
     <!-- core.min.js -->
-    <script src="assets/js/core.min.js"></script>
+    <script src="assetcms/js/core.min.js"></script>
 
     <!-- search -->
-    <script src="assets/search/search.js"></script>
+    <script src="assetcms/search/search.js"></script>
 
     <!-- custom scripts -->
-    <script src="assets/js/main.js"></script>
+    <script src="assetcms/js/main.js"></script>
 
     <!-- form plugins js -->
-    <script src="assets/quform/js/plugins.js"></script>
+    <script src="assetcms/quform/js/plugins.js"></script>
 
     <!-- form scripts js -->
-    <script src="assets/quform/js/scripts.js"></script>
+    <script src="assetcms/quform/js/scripts.js"></script>
 
     <!-- all js include end -->
 
